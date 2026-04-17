@@ -218,3 +218,13 @@ a:hover {
 .nav-links li a:hover::after {
     width: 100%;
 }
+
+
+img{
+    border-radius:50%;
+    margin-top:10px;
+}
+
+.hero-content{
+    text-align:center
+}
