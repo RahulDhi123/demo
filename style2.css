@@ -1,0 +1,117 @@
+
+
+/* ===== Reset ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===== Animated Gradient Background ===== */
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height:100vh;
+    background: linear-gradient(-45deg, #1f1c2c, #928dab, #16222a, #3a6073);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    color:white;
+}
+
+@keyframes gradientBG{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* ===== Navbar ===== */
+#navbar{
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    padding:20px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin:0 15px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#040330;
+    text-shadow:0 0 10px #04024d;
+}
+
+/* ===== Profile Image ===== */
+#navbar img{
+    margin-top:15px;
+    border-radius:50%;
+    border:3px solid #00f5ff;
+    box-shadow:0 0 20px #00f5ff;
+    transition:0.4s;
+}
+
+#navbar img:hover{
+    transform:rotate(5deg) scale(1.1);
+}
+
+/* ===== Glass Sections ===== */
+section{
+    width:80%;
+    margin:40px auto;
+    padding:30px;
+    border-radius:15px;
+    backdrop-filter: blur(15px);
+    background: rgba(24, 23, 23, 0.1);
+    border:1px solid rgba(255,255,255,0.2);
+    box-shadow:0 8px 32px rgba(0,0,0,0.4);
+    transition:0.4s;
+}
+
+section:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 40px rgba(0,0,0,0.6);
+}
+
+/* ===== Headings ===== */
+h1,h2{
+    margin-bottom:15px;
+    color:#00f5ff;    letter-spacing:1px;
+}
+
+/* ===== Lists ===== */
+li{
+    margin-bottom:8px;
+}
+
+/* ===== Links ===== */
+a{
+    color:#00f5ff;
+}
+
+a:hover{
+    color:white;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+    section{
+        width:95%;
+        padding:20px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+}
+
+
+#projects{
+    font-size:x-large;
+}
